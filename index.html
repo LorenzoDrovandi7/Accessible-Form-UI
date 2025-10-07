@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Form UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Accessible Form UI</h1>
+
+    <div class="form-container">
+      <form class="form">
+        <label id="nameLabel" for="full-name-input">Full Name</label>
+        <input
+          id="full-name-input"
+          type="text"
+          placeholder="Enter your full name"
+          aria-labelledby="nameLabel"
+          aria-required="true"
+          aria-describedby="nameError" />
+        <div id="nameError" class="error name"></div>
+
+        <label id="emailLabel" for="email-input">Email</label>
+        <input
+          class="failed"
+          id="email-input"
+          type="email"
+          placeholder="johnrambo@gmail.com"
+          aria-labelledby="emailLabel"
+          aria-required="true"
+          aria-invalid="true"
+          aria-describedby="emailError" />
+        <div id="emailError" class="error email">Email is already taken</div>
+
+        <label id="passwordLabel" for="password-input">Password</label>
+        <input
+          id="password-input"
+          type="password"
+          placeholder="Enter Password"
+          aria-labelledby="passwordLabel"
+          aria-required="true"
+          aria-describedby="passwordError" />
+        <div id="passwordError" class="error password"></div>
+
+        <label id="confirmPasswordLabel" for="confirm-password-input">Confirm password</label>
+        <input
+          id="confirm-password-input"
+          type="password"
+          placeholder="Confirm Password"
+          aria-labelledby="confirmPasswordLabel"
+          aria-required="true"
+          aria-describedby="confirmPasswordError" />
+        <div id="confirmPasswordError" class="error confirm-password"></div>
+
+        <button class="update-button" type="submit">Update profile</button>
+      </form>
+
+      <div class="info">
+        <div class="circle-container">
+          <div class="circle">
+            <div class="inner">65%</div>
+          </div>
+          <p>Profile Completeness</p>
+        </div>
+
+        <div class="tasklist">
+          <ul>
+            <li class="done">Create Profile</li>
+            <li class="done">Update Progress</li>
+            <li class="done">Setup public profile</li>
+            <li>Complete your first project</li>
+            <li>Invite your friends</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

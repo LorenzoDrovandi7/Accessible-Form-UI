@@ -1,0 +1,133 @@
+body {
+  font-family: "Saira", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background: conic-gradient(#000000 0% 65%, #e0e0e0 65% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.inner {
+  background: white;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.tasklist {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #d4d4d4;
+  border-radius: 10px;
+}
+
+ul {
+  padding: 20px;
+}
+
+li {
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+li.done {
+  text-decoration: line-through;
+  color: rgb(50, 50, 50);
+}
+
+.info,
+p {
+  font-size: 1.5rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+
+.failed {
+  border: 3px solid rgb(164, 0, 0);
+}
+
+.failed::placeholder {
+  color: rgb(164, 0, 0);
+  opacity: 1;
+}
+
+.error {
+  color: rgb(164, 0, 0);
+  font-size: 1.1rem;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.update-button {
+  font-size: 1.2rem;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: rgb(50, 50, 50);
+}
+
+input:focus {
+  outline: none;
+  background-color: #e3e3e3;
+}
